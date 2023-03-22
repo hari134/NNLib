@@ -1,0 +1,7 @@
+Datasets/*
+!Datasets/MNIST/
+**/__pycache__
+legacy/
+.idea/
+**/.ipynb_checkpoints
+venv/
