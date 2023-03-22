@@ -1,6 +1,6 @@
 # Neural Networks and ML Algorithms
 
-This library(NNLib) is a Python implementation of a simple neural network, built using NumPy with a PyTorch-like syntax. The library currently supports the creation of linear layers and several activation functions commonly used in deep learning, such as ReLU, sigmoid, and softmax.
+This library(NNLib) is a Python implementation of a simple neural network library, built using NumPy with a PyTorch-like syntax. The library currently supports the creation of linear layers and several activation functions commonly used in deep learning, such as ReLU, sigmoid, and softmax.
 
 This library is intended to be used as a learning tool for those new to neural networks, rather than as a production-grade library. The code is implemented to run on the CPU only.
 
