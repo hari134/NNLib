@@ -43,9 +43,22 @@ class DenseNN(nn.Module):
         o = self.Layers.forward(z0)
         return o
         
-network = DenseNN(784, 128, 64, 10)
-criterion = nn.MSE(network.parameters())
-optimizer = optim.SGD(network.parameters(), lr=0.01)
+network = DenseNN(784, 128, 64, 10)                  #initializing the layer dimensions
+criterion = nn.MSE(network.parameters())             #configuring MSE loss
+optimizer = optim.SGD(network.parameters(), lr=0.01) #configuring SGD for optimization
+
+#training
+def train(epochs, x_train, y_train, optimizer):
+    for epoch in range(epochs):
+        running_loss = 0
+        for i in range(60000):
+            a0 = np.array([x_train[i]]).T
+            y_true = np.array([y_train[i]]).T
+            y_pred = network.forward(a0)
+            loss = criterion(y_pred, y_true)         #computes the loss and returns a loss object
+            loss.backward()                          #computes the gradients
+            optimizer.step()                         #updates the parameters based on the computed gradients
+            running_loss += loss.item()              #loss.item() returns scalar loss value
         
 ```
 
