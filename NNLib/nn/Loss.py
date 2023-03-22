@@ -1,8 +1,5 @@
-
-
-
 import numpy as np
-from collections import deque
+
 
 class Loss():
     def __init__(self,parameters,_loss,_loss_logits_grad):
