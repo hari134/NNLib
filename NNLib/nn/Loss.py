@@ -1,8 +1,4 @@
 import numpy as np
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 
 
 class Loss:
@@ -47,17 +43,5 @@ def _mse(predicted, target):
     _num_datapoints_per_input = predicted.shape[1]
     _loss = np.square(predicted - target).mean()
     
-<<<<<<< HEAD
     _loss_grad = ((predicted - target) / _num_input).mean(axis=1).reshape(_num_input,1)
     return _loss, _loss_grad
-=======
-    _num_input = input.shape[0]
-    _num_datapoints_per_input = input.shape[1]
-    _loss = np.square(input-target).mean(axis=0)
-    
-    _loss_logits_grad = (input-target)/(_num_input)
-    return _loss,_loss_logits_grad
-    
-    
-    
->>>>>>> origin/master
