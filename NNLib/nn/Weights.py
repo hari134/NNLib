@@ -23,18 +23,6 @@ class Xavier(WeightInitializer):
         weights = np.random.standard_normal(
             lower, upper, size=(n_curr, n_prev))
         return weights
-
-
-class NormalizedXavier(WeightInitializer):
-    """For softmax,sigmoid or no activation"""
-    def __init__(self) -> None:
-        pass
-    
-    def initialize(self):
-        np.random.seed(0)
-        lower ,upper = -6/sqrt(n_prev + n_curr) , 6/sqrt(n_prev + n_curr)
-        weights = np.random.standard_normal(lower,upper,size = (n_curr,n_prev))
-        return weights
      
 
 class He(WeightInitializer):
