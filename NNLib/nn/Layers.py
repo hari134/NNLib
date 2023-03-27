@@ -68,5 +68,22 @@ class Linear(Layer):
 
 
 class Conv2d(Layer):
+    def __init__(self, in_channel, out_channel, kernel_size):
+        self.in_channel = in_channel
+        self.out_channel = out_channel
+        self.kernel_size = kernel_size
+    
+
+class MaxPooling2d(Layer):
+    def __init__(self):
+        pass
+
+
+class Dropout(Layer):
+    def __init__(self, *args):
+        raise NotImplementedError
+    
+
+class Flatten(Layer):
     def __init__(self, *args):
         raise NotImplementedError

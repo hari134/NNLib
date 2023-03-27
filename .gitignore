@@ -5,5 +5,3 @@ legacy/
 .idea/
 **/.ipynb_checkpoints
 venv/
-Examples/
-!Examples/DenseNN.ipynb
