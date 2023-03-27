@@ -12,6 +12,7 @@ To use this library, you can clone this repository and install the required pack
 
 ```shell
 git clone https://github.com/hari134/Neural_Networks_and_ML_Algorithms.git
+git lfs fetch                                                               #optional if you want to get the datasets
 cd Neural_Networks_and_ML_Algorithms
 pip install -r requirements.txt
 ```
