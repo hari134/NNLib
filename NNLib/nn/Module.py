@@ -12,10 +12,8 @@ class LayerObj:
 
 
 class Module:
-    __LAYERS = deque()
-
     def __init__(self):
-        pass
+        self. __LAYERS = deque()
 
     def add_layer(self, layer):
         self.__LAYERS.append(layer)
